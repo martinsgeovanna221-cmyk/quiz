@@ -1,0 +1,107 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FUNDO */
+body {
+    background: linear-gradient(135deg, #000000, #1a0000);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+/* CONTAINER PRINCIPAL */
+body > h1,
+body > h3,
+body > div {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* TÍTULO */
+h1 {
+    text-align: center;
+    color: #ff0000;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px red;
+}
+
+/* PERGUNTAS */
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ff4d4d;
+}
+
+/* CAIXA DAS ALTERNATIVAS */
+div {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.25);
+}
+
+/* BOTÕES */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+button:hover {
+    background-color: red;
+    color: black;
+}
+
+/* DESATIVADO */
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* TÍTULO CLICÁVEL */
+#titulo {
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#titulo:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 20px red;
+}
+
+/* QUIZ ESCONDIDO */
+.escondido {
+    opacity: 0;
+    transform: translateY(30px);
+    pointer-events: none;
+}
+
+/* QUIZ VISÍVEL */
+.quiz.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: 0.6s ease;
+}
+
+/* ESPAÇO ENTRE TÍTULO E QUIZ */
+.quiz {
+    margin-top: 20px;
+}
